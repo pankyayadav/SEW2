@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Our Team</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="/css/style.css">
+<style type="text/css">
+footer{
+	/* position: fixed; */
+	position: fixed;
+	bottom: 0;
+}
+/* @media screen and (max-width: 768px) {
+footer {
+	position: relative;
+}
+} */
+</style>
+</head>
+<body>
+	<header>
+	<!-- 	<img src="/image/logo1.jpg">
+		<nav>
+			<ul>
+				<li><a href="home">Home</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="contact">Contact</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Careers</a></li>
+			</ul>
+		</nav> -->
+		
+		 <nav>
+<!--     <div class="container1">
+      <div class="log"> -->
+        <img src="/image/logo1.jpg" width="100" height="50">
+      <!-- </div> -->
+      <div class="toggle" onclick="toggleMenu()">&#9776;</div>
+
+
+      <ul class="menu" id="menu1">
+        <li><a href="/views/home.html">Home</a></li>
+        <!-- <hr class="solid"> -->
+       
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/team.html">Team</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/Project.html">Project</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/about.html">About</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/contact.html">Contact</a></li>
+        <!-- <hr class="solid"> -->
+		<li><a href="#">Services</a>
+			<ul class="submenu">
+					<li><a href="/views/commissioning.html">Commissioning</a></li>
+					<li><a href="/views/Conduiting.html">Conduiting</a></li>
+					<li><a href="/views/cablesDetails.html">Installing Cables</a></li>
+					<li><a href="/views/maintenance.html">Electrical Maintenance</a></li>
+					<li><a href="/views/panelWork.html">Panel Work</a></li>
+				</ul>
+			</li>
+      </ul>
+    </div>
+  </nav>
+	</header>
+	
+	<div class="about1">
+		<!-- <h2>About Us</h2> -->
+		<h3 class="classic-title">
+				<span>Our Teams</span>
+		</h3>
+		<div>
+			<p>We are the king of business</p>
+			<p>Awarded by so many things</p>
+		</div>
+	</div>
+
+	<footer>
+		<div class="col-md-9">
+			<p>&copy; 2018 Test Enterprises - ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+
+<script>
+function toggleMenu() {
+	console.log('test');
+      var menu = document.querySelector(".menu");
+      menu.classList.toggle("active");
+    }
+</script>	
+</body>
+</html>

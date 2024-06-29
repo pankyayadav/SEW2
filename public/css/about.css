@@ -1,0 +1,107 @@
+body {
+	font-family: Arial, open-button, sans-serif;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+header img {
+	height: 80px;
+	margin-left: 40px;
+}
+
+body {
+	height: 100vh;
+	/*  background-image: url("/image/dummy.jpeg"); */
+	background-size: cover;
+	font-family: sans-serif;
+	margin-top: 80px;
+	padding: 30px;
+}
+
+header {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	display: flex;
+	align-items: center;
+	box-shadow: 0 0 25px 0 black;
+}
+
+header * {
+	display: inline;
+}
+
+header li {
+	margin: 20px;
+}
+
+header li a {
+	color: black;
+	text-decoration: none;
+}
+
+.about{
+	background-color: #f2f2f2;
+	border-radius: 5px;
+	padding: 20px;
+	flex-wrap: wrap;
+}
+
+@media (min-width: 767px){
+ .about h2{
+    font-size: 70px;
+    text-align: center;
+    /* margin-right: -20px; */
+}
+.about p{
+    font-size: 40px;
+    text-align: center;
+    /* margin-right: -20px; */
+}
+footer p{
+	text-align: center;
+	padding: 870px 0 31px;
+}	
+}
+/* @media screen and (max-width: 768px) { */
+@media (min-width: 768px) and (max-width: 991px){
+      .menu {
+        display: none;
+        position: absolute;
+       top: 64px; 
+        left: 0;
+        width: 100%;
+        background-color: white ;
+	    opacity:10;
+        z-index: 9999;
+      }
+      .menu.active {
+        display: flex;
+        flex-direction: column;
+        height: 2000%;
+        transition: width 2s;
+        transition-timing-function: linear;
+      }
+    }
+    .toggle {
+      display: none;
+      position: absolute;
+      top: 10px;
+      right: 20px;
+    }
+
+    /* Add this CSS to show the toggle button in mobile view */
+    @media screen and (max-width: 768px) {
+      .toggle {
+        display: block;
+      }
+      hr.solid {
+  border-top: 3px solid orange;
+
+}
+    }

@@ -1,0 +1,129 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>About Us</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="/css/style.css">
+<style type="text/css">
+/* footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%; 
+	background-color: black;
+	color: white;
+	text-align: center;
+} */
+footer{
+	position: fixed;
+	bottom: 0;	
+}
+@media screen and (max-width: 768px) {
+footer {
+	position: relative;
+	bottom: 0;
+}
+} 
+</style>
+</head>
+<body>
+	<header>
+	<!-- 	<img src="/image/logo1.jpg">
+		<nav>
+			<ul>
+				<li><a href="home">Home</a></li>
+				<li><a href="about">About</a></li>
+				<li><a href="#">Pricing</a></li>
+				<li><a href="#">Terms of use</a></li>
+				<li><a href="contact">Contact</a></li>
+				<li><a href="#">Services</a></li>
+				<li><a href="#">Careers</a></li>
+			</ul>
+		</nav> -->
+		
+		 <nav>
+<!--     <div class="container1">
+      <div class="log"> -->
+        <img src="/image/logo1.jpg" width="100" height="50">
+      <!-- </div> -->
+      <div class="toggle" onclick="toggleMenu()">&#9776;</div>
+
+
+      <ul class="menu" id="menu1">
+        <li><a href="/views/home.html">Home</a></li>
+        <!-- <hr class="solid"> -->
+      
+        <!-- <hr class="solid"> -->
+       <li><a href="/views/team.html">Team</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/Project.html">Project</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/about.html">About</a></li>
+        <!-- <hr class="solid"> -->
+        <li><a href="/views/contact.html">Contact</a></li>
+        <!-- <hr class="solid"> -->
+		<li><a href="#">Services<!-- <i class="fa fa-caret-down" aria-hidden="true"></i> --></a>
+			<!-- <span style="color:black;font-size: 12px;font-weight: normal;">&#9660;</span></a> -->
+				<ul class="submenu">
+					<li><a href="/views/commissioning.html">Commissioning</a></li>
+					<li><a href="/views/Conduiting.html">Conduiting</a></li>
+					<li><a href="/views/cablesDetails.html">Installing Cables</a></li>
+					<li><a href="/views/maintenance.html">Electrical Maintenance</a></li>
+					<li><a href="/views/panelWork.html">Panel Work</a></li>
+				</ul>
+			</li>
+      </ul>
+    </div>
+  </nav>
+	</header>
+	
+	<div class="about1">
+		<!-- <h2>About Us</h2> -->
+		<h2 class="classic-title">
+				<span>About Us</span>
+		</h2>
+		<div>
+			<!-- <p>We are the king of business</p>
+			<p>Awarded by so many things</p> -->
+			<p>One of the most significant gifts that science has bestowed
+				upon humanity is electricity. It has also ingrained itself into
+				Morden culture, and it is impossible to imagine a world without it.
+				Here, a SULOCHANA ENTERPRISE employee assists in offering a
+				sustainable and safe electrical work solution to maintain the
+				happiness and safety of your modern life. High-quality services are
+				provided to Projects by the company's experienced and moral staff
+				members that work in the same industry.</p>
+			<p>Our services cover a wide range of tasks, including
+				engineering, installing, commissioning, conduiting, installing LT&HT
+				cables, meter room repairs, panel installation, forthcoming
+				projects, and operating and maintaining current projects.</p>
+			<p>The corporation provides electrical supplies for commercial,
+				industrial, and residential complexes, as well as
+				telecommunications. To improve the project, our staff members would
+				like to impart their knowledge and experience to our Project.</p>
+			<p>The products and services are carefully picked to fit our
+				Project's vision. Our staff puts a lot of effort into using their
+				expertise to complete your ideal project. Our mission is to deliver
+				an economical and sustainable electrical solution with the highest
+				quality materials and complete safety for all precious clie</p>
+		</div>
+	</div>
+
+	<footer>
+		<div class="col-lg-12">
+			<p>&copy; 2018 Test Enterprises - ALL RIGHTS RESERVED</p>
+		</div>
+	</footer>
+
+<script>
+function toggleMenu() {
+	console.log('test');
+      var menu = document.querySelector(".menu");
+      menu.classList.toggle("active");
+    }
+</script>	
+</body>
+</html>
