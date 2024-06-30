@@ -1,11 +1,11 @@
 
 const express = require('express')
 const app = express()
-const port = 8081
+const port = process.env.PORT || 8081
 const bodyParser = require('body-parser')
 
-// app.use(express.static('public'));
-app.use(express.static(__dirname + '/public'));
+app.use(express.static('public'));
+// app.use(express.static(__dirname + '/public'));
 app.use(bodyParser.json()) // for parsing application/json
 app.use(bodyParser.urlencoded({ extended: true }))
 const nodemailer = require("nodemailer");
